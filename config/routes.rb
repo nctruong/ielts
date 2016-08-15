@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+#  get 'student/create'
+
+#  get 'student/new'
+
+ # get 'student/edit'
+
+#  get '/student/:id', to: 'student#show', :as => :student
+
+#  get 'student/update'
+
+#  get 'student/destroy'
+
+  get 'student/index'
+  
   get 'permission/sign_in'
 
   get 'permission/sign_up'
@@ -27,7 +41,8 @@ Rails.application.routes.draw do
 
   get 'session/create', to: 'sessions#create'
   resources :sessions, only: [:create, :destroy]
-  resource :home, only: [:show]
+  resource :homes, only: [:show]
+  resource :students
 
   root to: "home#show"
 end

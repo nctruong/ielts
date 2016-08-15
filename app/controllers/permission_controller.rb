@@ -3,6 +3,7 @@ class PermissionController < ApplicationController
   end
 
   def sign_up
+    
   end
 
   def sign_out
