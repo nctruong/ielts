@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Facebook Auth Example</title>
+  <title>Ielts College</title>
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= stylesheet_link_tag "custom", media: "all", "data-turbolinks-track" => true %>
@@ -19,10 +19,10 @@
       <ul class="nav navbar-nav navbar-right">
         <% if current_user %>
             <li>Signed in as <strong><%= current_user.name %></strong></li>
-            <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
+            <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
         <% else %>
-            <li><%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %></li>
-            <li><%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %></li>
+            <li><%= link_to "Sign in with Facebook", student_facebook_omniauth_authorize_path, id: "sign_in" %></li>
+            <li><%= link_to "Sign in with Google", student_google_oauth2_omniauth_authorize_path, id: "sign_in" %></li>
         <% end %>
       </ul>
     </nav>

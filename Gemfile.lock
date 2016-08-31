@@ -231,8 +231,8 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (= 0.3.20)
-  omniauth-facebook (~> 1.4.1)
-  omniauth-google-oauth2 (~> 0.2.1)
+  omniauth-facebook
+  omniauth-google-oauth2
   rack-cors
   rails (= 4.2.4)
   sass-rails (~> 5.0)

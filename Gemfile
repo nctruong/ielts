@@ -6,8 +6,8 @@ gem 'rails', '4.2.4'
 # Use mysql as the database for Active Record
 gem 'mysql2', '0.3.20'
 # Use these gems to log in through facebook and google
-gem 'omniauth-facebook', '~> 1.4.1'
-gem "omniauth-google-oauth2", "~> 0.2.1"
+gem 'omniauth-facebook'
+gem "omniauth-google-oauth2"
 # Using bootstrap theme
 gem 'bootstrap-sass', '~> 3.3.5.1'
 # Devise
